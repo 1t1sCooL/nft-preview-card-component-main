@@ -9,8 +9,12 @@
 }
 @font-face {
     font-family: Outfit;
+    src: url('../../public/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
 }
 body{
+    font-family: 'Outfit', sans-serif;
     background-color: var(--Blue950mainBG);
     height: 100vh;
     display: flex;
@@ -25,12 +29,92 @@ body{
     justify-content: center;
     background-color: var(--Blue900cardBG);
     width: 450px;
-    border-radius: 20px;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 .img{
-    width: 350px;
-    padding: 30px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    align-self: flex-start;
+    color: var(--White);
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.description{
+    color: var(--Blue500);
+    font-size: 23px;
+    line-height: 150%;
+}
+.flexWrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: start;
+    border-bottom: 1px solid var(--Blue800line);
+    margin-bottom: 15px;
+}
+.price{
+    padding-left: 10px;
+    color: var(--Cyan400);
+    font-size: 1.2rem;
+}
+.flexWrap svg{
+    width: 25px;
+    height: 25px;
+}
+.priceWrap{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.daysLeft{
+    color: var(--Blue500);
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.daysLeftWrap{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: var(--Blue500);
+    font-size: 1.2rem;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.author span{
+    color: var(--White);
+    padding-left: 10px;
+}
+.avatar{
+    height: 40px;
+    width: 40px;
+    padding-right: 20px;
+
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid var(--Blue500);
+    border-radius: 50%;
 }
 .hidden{
     display: none;
