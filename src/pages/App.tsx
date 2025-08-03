@@ -9,7 +9,7 @@ return(<>
             </h1>
             <div className={styles.img}>
                 <img className={styles.img}
-                     src='../../public/image-equilibrium.jpg'
+                     src='/image-equilibrium.jpg'
                      alt='Equilibrium'
                 />
             </div>
