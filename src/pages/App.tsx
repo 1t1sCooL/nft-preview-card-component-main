@@ -30,7 +30,11 @@ return(<>
             </div>
             <div className={styles.author}>
                 <div className={styles.avatar}>
-                    <img src='/image-avatar.png' alt={'Author avatar'}/>
+                    <img
+                        src='/image-avatar.png'
+                        //src='/NFTPreviewCardComponent/image-avatar.png'
+                        alt={'Author avatar'}
+                    />
                 </div>
                 Creation of  {' '}<span className={styles.name}> Jules Wyvern</span>
             </div>
