@@ -46,6 +46,34 @@ body{
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.img:hover img {
+    opacity: 0.6;
+}
+.img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 255, 255, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.img:hover::before {
+    opacity: 1;
+}
+.img::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../../public/icon-view.svg") no-repeat center/contain;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.img:hover::after {
+    opacity: 1;
 }
 .header{
     align-self: flex-start;
@@ -53,6 +81,11 @@ body{
     font-size: 1.7rem;
     margin-top: 30px;
     margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+.header:hover{
+    color: var(--Cyan400);
+    cursor: pointer;
 }
 .description{
     color: var(--Blue500);
@@ -106,12 +139,17 @@ body{
 .author span{
     color: var(--White);
     padding-left: 10px;
+    transition: color 0.3s ease;
+}
+.author span:hover{
+    color: var(--Cyan400);
+    cursor: pointer;
 }
 .avatar{
     height: 40px;
     width: 40px;
     padding-right: 20px;
-
+    cursor: pointer;
 }
 .avatar img{
     width: 100%;
@@ -120,6 +158,10 @@ body{
     display: block;
     border: 2px solid var(--Blue500);
     border-radius: 50%;
+    transition: border-color 0.3s ease;
+}
+.avatar img:hover{
+    border: 2px solid var(--Cyan400);
 }
 .footer{
     display: flex;
