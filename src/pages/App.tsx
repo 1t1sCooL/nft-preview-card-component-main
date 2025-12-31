@@ -9,8 +9,8 @@ function App() {
         <div className={styles.img}>
           <img
             className={styles.img}
-            src="/NFTPreviewCardComponent/image-equilibrium.jpg"
-            // src="/image-equilibrium.jpg"
+            // src="/NFTPreviewCardComponent/image-equilibrium.jpg"
+            src="/image-equilibrium.jpg"
             alt="Equilibrium"
           />
         </div>
@@ -51,8 +51,8 @@ function App() {
         <div className={styles.author}>
           <div className={styles.avatar}>
             <img
-              //   src="/image-avatar.png"
-              src="/NFTPreviewCardComponent/image-avatar.png"
+              src="/image-avatar.png"
+              //   src="/NFTPreviewCardComponent/image-avatar.png"
               alt={"Author avatar"}
             />
           </div>
